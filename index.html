@@ -27,11 +27,9 @@
     />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-example2">
+    <style></style>
     <header>
-      <nav
-        id="navbar-example2"
-        class="navbar navbar-expand-sm position-fixed w-100 z-3"
-      >
+      <nav id="navbar-example2" class="navbar navbar-expand-sm w-100 z-3">
         <div class="container px-3 w-75">
           <a class="navbar-brand text-uppercase" href="#home">Daniels </a>
           <button
@@ -48,12 +46,15 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0 text-capitalize">
               <li class="nav-item">
-                <a class="nav-link" href="#home" aria-current="page"
+                <a
+                  class="nav-link hero-section"
+                  href="#home"
+                  aria-current="page"
                   >Home <span class="visually-hidden">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">about</a>
+                <a class="nav-link about" href="#about">about</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#services">services</a>
@@ -62,10 +63,13 @@
                 <a class="nav-link" href="#works">works</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#clients">clients</a>
+                <a class="nav-link clients" href="#clients">clients</a>
+              </li>
+              <li class="nav-item visually-hidden">
+                <a class="nav-link stats" href="#counter-start">stats</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#team">team</a>
+                <a class="nav-link team" href="#team">team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">contact</a>
@@ -174,13 +178,8 @@
                       aria-valuemax="100"
                     >
                       <div
-                        class="progress-bar bg-dark rounded-1"
+                        class="progress-bar design-bar bg-dark rounded-1"
                         data-value="95%"
-                        style="width: 95%"
-                        data-aos="fade-right"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
                       >
                         > d-flex flex-column
                         <h6>web design</h6>
@@ -205,9 +204,8 @@
                       aria-valuemax="100"
                     >
                       <div
-                        class="progress-bar bg-dark rounded-1"
+                        class="progress-bar branding-bar bg-dark rounded-1"
                         data-value="80%"
-                        style="width: 80%"
                       >
                         <h6>branding</h6>
                       </div>
@@ -221,24 +219,27 @@
                       aria-valuemax="100"
                     >
                       <div
-                        class="progress-bar bg-dark rounded-1"
+                        class="progress-bar dev-bar bg-dark rounded-1"
                         data-value="90%"
-                        style="width: 90%"
                       >
                         <h6>Development</h6>
                       </div>
                     </div>
                   </div>
-                  <div class="about-btns">
-                    <button type="button" class="btn cv btn-dark">
-                      download C.V
-                    </button>
-                    <button
-                      type="button"
-                      class="btn contact-btn btn-outline-dark"
-                    >
-                      contact me
-                    </button>
+                  <div class="row about-btns g-2 mt-4">
+                    <div class="col-md-4 col-sm-6">
+                      <button type="button" class="btn cv btn-dark w-100">
+                        Download C.V
+                      </button>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <button
+                        type="button"
+                        class="btn contact-btn btn-outline-dark w-100"
+                      >
+                        Contact Me
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -430,10 +431,9 @@
             >
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link text-dark active"
+                  class="nav-link all-tap text-dark active"
                   id="pills-home-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#pills-home"
                   type="button"
                   role="tab"
                   aria-controls="pills-home"
@@ -444,10 +444,9 @@
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link text-dark"
+                  class="nav-link brand-tab text-dark"
                   id="pills-profile-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#pills-profile"
                   role="tab"
                   type="button"
                   aria-controls="pills-profile"
@@ -458,10 +457,9 @@
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link text-dark"
+                  class="nav-link design-tap text-dark"
                   id="pills-contact-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
                   role="tab"
                   type="button"
                   aria-controls="pills-contact"
@@ -472,10 +470,9 @@
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link text-dark"
+                  class="nav-link graphic-tap text-dark"
                   id="pills-graph-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#pills-graph"
                   role="tab"
                   type="button"
                   aria-controls="pills-graph"
@@ -488,14 +485,13 @@
             <div class="tab-content" id="pills-tabContent">
               <div
                 class="tab-pane fade show active"
-                id="pills-home"
                 role="tabpanel"
                 aria-labelledby="pills-home-tab"
                 tabindex="0"
               >
                 <div class="container">
                   <div class="row g-4">
-                    <div class="col-md-4">
+                    <div class="col-md-4 tap tap-one">
                       <div class="p-img">
                         <img
                           src="images/portfolio/1.jpg"
@@ -517,7 +513,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 tap tap-two">
                       <div class="p-img">
                         <img
                           src="images/portfolio/2.jpg"
@@ -539,7 +535,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 tap tap-three">
                       <div class="p-img">
                         <img
                           src="images/portfolio/3.jpg"
@@ -561,7 +557,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 tap tap-four">
                       <div class="p-img">
                         <img
                           src="images/portfolio/4.jpg"
@@ -583,7 +579,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 tap tap-five">
                       <div class="p-img">
                         <img
                           src="images/portfolio/5.jpg"
@@ -605,206 +601,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 tap tap-six">
                       <div class="p-img">
                         <img
                           src="images/portfolio/6.jpg"
                           class="img-fluid rounded-top"
                           alt="portfolio 6"
-                        />
-                        <div class="img-layer d-flex flex-column">
-                          <h6>Web Design</h6>
-                          <div
-                            class="layer-icons d-flex justify-content-between w-20"
-                          >
-                            <span><i class="fa-solid fa-link"></i></span>
-                            <span
-                              data-bs-toggle="modal"
-                              data-bs-target="#staticBackdrop"
-                              ><i class="fa-solid fa-magnifying-glass-plus"></i
-                            ></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-profile"
-                role="tabpanel"
-                aria-labelledby="pills-profile-tab"
-                tabindex="0"
-              >
-                <div class="container">
-                  <div class="row g-4">
-                    <div class="col-md-4">
-                      <div class="p-img">
-                        <img
-                          src="images/portfolio/4.jpg"
-                          class="img-fluid rounded-top"
-                          alt="portfolio 4"
-                        />
-                        <div class="img-layer d-flex flex-column">
-                          <h6>Web Design</h6>
-                          <div
-                            class="layer-icons d-flex justify-content-between w-20"
-                          >
-                            <span><i class="fa-solid fa-link"></i></span>
-                            <span
-                              data-bs-toggle="modal"
-                              data-bs-target="#staticBackdrop"
-                              ><i class="fa-solid fa-magnifying-glass-plus"></i
-                            ></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="p-img">
-                        <img
-                          src="images/portfolio/6.jpg"
-                          class="img-fluid rounded-top"
-                          alt="portfolio 6"
-                        />
-                        <div class="img-layer d-flex flex-column">
-                          <h6>Web Design</h6>
-                          <div
-                            class="layer-icons d-flex justify-content-between w-20"
-                          >
-                            <span><i class="fa-solid fa-link"></i></span>
-                            <span
-                              data-bs-toggle="modal"
-                              data-bs-target="#staticBackdrop"
-                              ><i class="fa-solid fa-magnifying-glass-plus"></i
-                            ></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-contact"
-                role="tabpanel"
-                aria-labelledby="pills-contact-tab"
-                tabindex="0"
-              >
-                <div class="container">
-                  <div class="row g-4">
-                    <div class="col-md-4">
-                      <div class="p-img">
-                        <img
-                          src="images/portfolio/2.jpg"
-                          class="img-fluid rounded-top"
-                          alt="portfolio 2"
-                        />
-                        <div class="img-layer d-flex flex-column">
-                          <h6>Web Design</h6>
-                          <div
-                            class="layer-icons d-flex justify-content-between w-20"
-                          >
-                            <span><i class="fa-solid fa-link"></i></span>
-                            <span
-                              data-bs-toggle="modal"
-                              data-bs-target="#staticBackdrop"
-                              ><i class="fa-solid fa-magnifying-glass-plus"></i
-                            ></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="p-img">
-                        <img
-                          src="images/portfolio/5.jpg"
-                          class="img-fluid rounded-top"
-                          alt="portfolio 5"
-                        />
-                        <div class="img-layer d-flex flex-column">
-                          <h6>Web Design</h6>
-                          <div
-                            class="layer-icons d-flex justify-content-between w-20"
-                          >
-                            <span><i class="fa-solid fa-link"></i></span>
-                            <span
-                              data-bs-toggle="modal"
-                              data-bs-target="#staticBackdrop"
-                              ><i class="fa-solid fa-magnifying-glass-plus"></i
-                            ></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-graph"
-                role="tabpanel"
-                aria-labelledby="pills-graph-tab"
-                tabindex="0"
-              >
-                <div class="container">
-                  <div class="row g-4">
-                    <div class="col-md-4">
-                      <div class="p-img">
-                        <img
-                          src="images/portfolio/1.jpg"
-                          class="img-fluid rounded-top"
-                          alt="portfolio 1"
-                        />
-                        <div class="img-layer d-flex flex-column">
-                          <h6>Web Design</h6>
-                          <div
-                            class="layer-icons d-flex justify-content-between w-20"
-                          >
-                            <span><i class="fa-solid fa-link"></i></span>
-                            <span
-                              data-bs-toggle="modal"
-                              data-bs-target="#staticBackdrop"
-                              ><i class="fa-solid fa-magnifying-glass-plus"></i
-                            ></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="p-img">
-                        <img
-                          src="images/portfolio/3.jpg"
-                          class="img-fluid rounded-top"
-                          alt="portfolio 3"
-                        />
-                        <div class="img-layer d-flex flex-column">
-                          <h6>Web Design</h6>
-                          <div
-                            class="layer-icons d-flex justify-content-between w-20"
-                          >
-                            <span><i class="fa-solid fa-link"></i></span>
-                            <span
-                              data-bs-toggle="modal"
-                              data-bs-target="#staticBackdrop"
-                              ><i class="fa-solid fa-magnifying-glass-plus"></i
-                            ></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="p-img">
-                        <img
-                          src="images/portfolio/5.jpg"
-                          class="img-fluid rounded-top"
-                          alt="portfolio 5"
                         />
                         <div class="img-layer d-flex flex-column">
                           <h6>Web Design</h6>
@@ -925,7 +727,7 @@
             <h3 class="title title-fs z-1">Testimonials.</h3>
           </div>
           <div class="row">
-            <div class="offset-1 col-md-10 col-sm-12">
+            <div class="col-sm-12">
               <div
                 id="carouselExampleIndicators"
                 class="carousel slide"
@@ -1036,7 +838,7 @@
           </div>
         </div>
       </section>
-      <section class="stats-section">
+      <section id="counter-start" class="stats-section">
         <div class="py-5">
           <div class="container py-5">
             <div class="row g-3">
@@ -1049,7 +851,7 @@
                   </div>
                 </div>
                 <div class="stat-info text-center">
-                  <p class="stat-head">850</p>
+                  <p class="stat-head countOne"></p>
                   <span class="counter-text">Happy Customers</span>
                 </div>
               </div>
@@ -1062,7 +864,7 @@
                   </div>
                 </div>
                 <div class="stat-info text-center">
-                  <p class="stat-head">230</p>
+                  <p class="stat-head countTwo"></p>
                   <span class="counter-text">Complete Projects</span>
                 </div>
               </div>
@@ -1075,7 +877,7 @@
                   </div>
                 </div>
                 <div class="stat-info text-center">
-                  <p class="stat-head">9450</p>
+                  <p class="stat-head countThree"></p>
                   <span class="counter-text">Lines Of Code</span>
                 </div>
               </div>
@@ -1088,7 +890,7 @@
                   </div>
                 </div>
                 <div class="stat-info text-center">
-                  <p class="stat-head">780</p>
+                  <p class="stat-head countFour"></p>
                   <span class="counter-text">Files Downloaded</span>
                 </div>
               </div>
@@ -1354,6 +1156,9 @@
         <p class="mb-0">Copy Right 2018 © By Daniels All Rights Reserved</p>
       </div>
     </footer>
+    <div class="top position-fixed end-0 start-0"></div>
+    <div class="bottom position-fixed end-0 start-0"></div>
+    <div class="loading-spiner"></div>
     <!-- js BS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Typewriter  js -->
@@ -1369,7 +1174,7 @@
       });
     </script>
     <!-- nav scroll -->
-    <script>
+    <!-- <script>
       window.addEventListener("scroll", function () {
         const navbar = document.querySelector(".navbar");
         if (window.scrollY > 50) {
@@ -1378,6 +1183,6 @@
           navbar.classList.remove("navbar-scrolled");
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>
